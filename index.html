@@ -3,47 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Overpass:400,700">
+  <link rel="stylesheet" href="index.css">
   <title>Frontend Mentor | Interactive rating component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <div class="center main-square">
+	  <img src="./images/icon-star.svg" alt="star">
+	  <br>
+    <h1>
+      How did we do?
+    </h1>
 
-  <!-- Rating state start -->
-
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
+    <h2>
+	    Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!
+	  </h2>
+	  <br>
+	  <div class="wrap-flex">
+      <button type="button" class="circle unstyled-button">1</button>
+      <button type="button" class="circle unstyled-button">2</button>
+      <button type="button" class="circle unstyled-button">3</button>
+      <button type="button" class="circle unstyled-button">4</button>
+      <button type="button" class="circle unstyled-button">5</button>
+    </div>
+	  <br><br>
+	  <button class= "relative-center unstyled-button submit">Submit</button>
+  </div>
   <!-- Rating state end -->
 
+
   <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
+  <div class="center thank-you hidden">
+    <div class="relative-center">
+      <img src="./images/illustration-thank-you.svg">
+      <br><br>
+      <div class="relative-center rating">You selected <span id="rating" ></span> out of 5</div>
+      <br>
+      <h1>Thank you!</h1>
+      <h2>
+      We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!
+      </h2>
+    </div>
+  </div>
   <!-- Thank you state end -->
 
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/Kortzy">Thomas Ruchaud</a>.
   </div>
+  
+  <script src="index.js"></script>
 </body>
 </html>
